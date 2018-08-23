@@ -1,0 +1,286 @@
+
+
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+* {
+  font-family: 'Ubuntu', sans-serif; }
+
+body {
+  background-color: #161619; }
+
+.header {
+  background-color: #212333; }
+
+.title {
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box; }
+  @media (max-width: 767px) {
+    .title {
+      text-align: center; } }
+  .title h2 {
+    color: white;
+    margin: 0; }
+
+    @media (max-width: 767px) {
+      .textbox {
+        padding: 15px 20px !important
+      }
+    }
+
+
+.optionWrapper {
+  padding: 13px;
+  box-sizing: border-box;
+  text-align: center; }
+
+.container {
+  max-width: 30rem;
+  margin: 0 auto; }
+
+.box-prop, .blue-button, .option {
+  box-sizing: border-box;
+  border-radius: 9px;
+  border: none;
+  width: 100%; }
+
+.blue-button-prop, .blue-button, .add-button {
+  background: #2973bd;
+  font-weight: 700;
+  color: white;
+  cursor: pointer; }
+  .blue-button-prop :disabled, .blue-button :disabled, .add-button :disabled {
+    opacity: .5; }
+
+.blue-button-prop:disabled, .blue-button:disabled, .add-button:disabled {
+  opacity: .5; }
+
+.blue-button {
+  padding: 20px;
+  margin-bottom: 13px;}
+
+  .add-button:active{
+    opacity: .5; 
+  }
+
+.option {
+  word-break: break-word;
+  color: white;
+  background-color: #343444;
+  padding: 23px 18px;
+  margin-bottom: 13px;
+  border: 2px solid #343444;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  /* transition: 0.3s ease; */
+  cursor: pointer;}
+
+
+  .option p {
+    margin: 0;
+    padding: 0; }
+  .option:hover {
+    box-sizing: border-box;
+    border: 2px solid #313131;
+    background-color: transparent;
+    color: grey; }
+    .option:hover button {
+      visibility: visible; }
+    .option:hover p {
+      text-decoration: line-through; }
+  .option button {
+    background-color: transparent;
+    border: none;
+    color: grey;
+    visibility: hidden;
+    cursor: pointer; }
+    .option button:hover {
+      color: white; }
+
+.inputform {
+  display: flex; }
+  @media (max-width: 767px) {
+    .inputform {
+      flex-direction: column; } }
+  .inputform .textbox {
+    flex-grow: 1;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 9px;
+    border: none;
+    outline: none; }
+
+.add-button {
+  padding: 0 16px;
+  margin-left: 13px;
+  box-sizing: border-box;
+  border-radius: 9px;
+  border: none; }
+  @media (max-width: 767px) {
+    .add-button {
+      margin: 13px 0;
+      padding: 15px 20px; } }
+
+.button-remove {
+  background-color: transparent;
+  color: tomato;
+  border: none;
+  font-size: 40px;
+  margin-top: 13px;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out}
+
+  .hide{
+    opacity: 0;
+  }
+
+  .show{
+    opacity: 1;
+  }
+
+  .errorMessage{
+    font-style: italic;
+    color: tomato;
+    text-align: left;
+    padding-left: 18px;
+    
+    margin-top: 0;
+  }
+
+  @media (max-width: 767px) {
+    .errorMessage{
+    text-align: center;
+  }
+}
+
+  .message{
+    color: white;
+    margin-top: 13px;
+    margin-bottom: 5px;
+  }
+  .ReactModalPortal > div{
+    opacity: 0;
+  }
+
+  .ReactModalPortal .ReactModal__Overlay {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .ReactModalPortal .ReactModal__Overlay--after-open {
+    opacity: 1;
+  }
+
+  .ReactModalPortal .ReactModal__Overlay--before-close {
+    opacity: 0;
+  }
+
+  .modal {
+    background-color: #272733;
+    outline: none;
+    max-width: 15rem;
+    padding: 18px;
+    color: white;
+    box-sizing: border-box;
+    border-radius: 9px;
+    position: relative;
+  }
+
+  .modal__button {
+    padding: 7px 10px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: none;
+    background-color: tomato;
+    color: white;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    cursor: pointer;
+  }
+
+  .modal__text{
+    word-break: break-word;
+  }
+
+.fade-enter{
+  opacity:  0;
+  padding: 0 18px;
+}
+
+.fade-enter.fade-enter-active {
+  opacity:  1;
+  padding: 23px 18px;
+ transition:  300ms ease-out;
+}
+
+.fade-leave{
+  opacity:  1;
+  /* padding: 23px 18px; */
+}
+
+.fade-leave.fade-leave-active {
+  opacity:  0;
+  /* padding: 0 18px; */
+  transition:  200ms ease-out;
+}
+
+.fade-appear {
+  opacity: 0;
+}
+
+.fade-appear.fade-apper-active {
+  opacity:  1;
+  transition:  300ms ease-out;
+}
+
+
+
+
+
+
+  input:focus::-webkit-input-placeholder { color:transparent; }
+  input:focus:-moz-placeholder { color:transparent; } /* Firefox 18- */
+  input:focus::-moz-placeholder { color:transparent; } /* Firefox 19+ */
+  input:focus:-ms-input-placeholder { color:transparent; } /* oldIE ;) */
+
+
+  .howToDo{
+    word-break: break-word;
+    color: darkgrey;
+    background-color: white;
+    padding: 23px 18px;
+    margin-bottom: 13px;
+    border: 2px solid white;
+    transition: 0.3s ease;
+    box-sizing: border-box;
+    border-radius: 9px;
+    position: relative;
+  }
+
+
+  .howToDo p {
+    margin: 0;
+  }
+
+  .howToDo button {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    background-color: transparent;
+    color: lightgrey;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+    padding: 3px 5px;
+  }
+
+
+
+/*# sourceMappingURL=style.css.map */
+
+
